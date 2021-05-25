@@ -4,9 +4,9 @@
 }
 
 /* ajouter la police du site "Raleway"*/
-body{
-    @font-face {
-        font-family: 'Raleway';
-        src: url();
-    }
+@font-face {
+        font-family: 'Raleway';      
+        src: url(.font\Raleway-VariableFont_wght.ttf) format('ttf');
+        src: url(.font\static\Raleway-Bold.ttf) format('ttf');
+
 }
