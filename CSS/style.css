@@ -2,3 +2,11 @@
     
 
 }
+
+/* ajouter la police du site "Raleway"*/
+body{
+    @font-face {
+        font-family: 'Raleway';
+        src: url();
+    }
+}
