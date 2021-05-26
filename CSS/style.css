@@ -1,12 +1,12 @@
-.filter {
-    
-
+body{
+        background-color: white;
 }
+
 
 /* ajouter la police du site "Raleway"*/
 @font-face {
         font-family: 'Raleway';      
-        src: url(.font\Raleway-VariableFont_wght.ttf) format('ttf');
+        src: url(.font\Raleway-VariableFont_wght.ttf) format('ttf-variations');
         src: url(.font\static\Raleway-Bold.ttf) format('ttf');
 
 }

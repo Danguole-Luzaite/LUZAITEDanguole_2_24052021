@@ -1,0 +1,11 @@
+.logo { 
+    margin: auto;
+    align-content: left;
+    width: 385px;
+   height: 180px;
+}
+
+ img { /* Redimensionner le logo */
+    width: 96px;
+    height: 45px;
+}
