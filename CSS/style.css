@@ -13,6 +13,8 @@ body{
         background-color: white;
         /* ajouter font 'Raleway'*/ 
         font-family: 'Raleway', sans-serif;
+        
+        /* ajouter 'breakpoints'*/
 }
 
 main{
@@ -21,27 +23,41 @@ main{
 }
 
 .section2{  /* definir les margins et background de section2 */
+        display: inline-block;
+        object-position: left;
+        width: 880px ;
         background-color: #F2F2F2 ;
         border-radius: 20px;
         padding-top: 37px;
         padding-bottom: 38px;
         padding-left: 40px;
         padding-right: 40px;
+
 }
 
 #container{  /*  inserer container pour section2 'Hébergements à Marseille' */
-display: flex;
-flex-direction: row;
-flex-wrap: wrap;
-justify-content: space-evenly;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
 }
 
+        .element{
+                background-color: white;
+                border: white;
+                border-radius: 20px;
+                text-align: left;
 
+                
+        }
 
 
 aside{ /* definir les margins et background de aside */
-background-color: #F2F2F2 ;
-border-radius: 20px;
+        display: inline-block;
+        object-position: right;
+        background-color: #F2F2F2 ;
+        border-radius: 20px;
+        
 }
 
 
@@ -51,6 +67,6 @@ footer{ /* definir les margins et background du footer */
         padding-left: 40px;
 }
 
-footer, ul{
-        list-style-type: none; 
-}
+        footer, ul{
+                list-style-type: none; 
+        }
