@@ -2,7 +2,7 @@
 plus claire #DEEBFF, le gris pour le fond #F2F2F2. */
 
 
-/* ajouter la police du site "Raleway"*/
+/* ajouter la police du site "Raleway-variable"*/
 @font-face {
         font-family: 'Raleway';      
         src: url(.font\Raleway-VariableFont_wght.ttf) format('ttf-variations');
@@ -29,12 +29,17 @@ main{
         padding-right: 40px;
 }
 
+#container{  /*  inserer container pour section2 'Hébergements à Marseille' */
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+justify-content: space-evenly;
+}
 
 
 aside{ /* definir les margins et background de aside */
-        background-color: #F2F2F2 ;
-        border-radius: 20px;
-
+background-color: #F2F2F2 ;
+border-radius: 20px;
 }
 
 
@@ -42,4 +47,8 @@ footer{ /* definir les margins et background du footer */
         background-color: #F2F2F2 ;
         margin: 0;
         padding-left: 40px;
+}
+
+footer, ul{
+        list-style-type: none; 
 }
