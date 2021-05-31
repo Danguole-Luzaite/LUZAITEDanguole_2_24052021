@@ -64,7 +64,7 @@ aside{ /* definir les margins et background de aside */
 footer{ /* definir les margins et background du footer */
         background-color: #F2F2F2 ;
         margin: 0;
-        padding-left: 40px;
+        padding-left: 20px;
 }
 
         footer, ul{
