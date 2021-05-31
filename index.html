@@ -5,82 +5,118 @@
         <link rel="stylesheet" href="CSS/style.css">
         <link rel="stylesheet" href="CSS/header.css">
         <title>Reservia</title>
+        <script src="https://kit.fontawesome.com/dd84544794.js" crossorigin="anonymous"></script>
     </head>
 
     <body>
         <header>
-            <!-- insert Reservia logo -->
-            <div id="logo">
-                <img src="Images\Reservia@3x.png" alt="logo Reservia">  
+            <div>
+                <!-- insert Reservia logo -->
+                <img src="Images\Reservia@3x.png" alt="logo Reservia" id="logo">  
+                
+                <nav> <!-- définir des liens vers la barre de navigation horizontale -->
+                    <ul>
+                        <li><a href="Hébergement.asp"></a>Hébergement</li>
+                        <li><a href="Activités.asp"></a>Activités</li>
+                        <li><a href="S'inscrire.asp"></a></strong><strong class="sinscrire">S'inscrire</strong></li>
+                    </ul>
+                </nav>
             </div>
-            <nav>
-                <ul>
-                    <li>Hébergement</li>
-                    <li>Activités</li>
-                    <li>S'inscrire</li>
-                </ul>
-            </nav>
         </header>
 
         <main>
 
-        <section>
-            <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
-            <p>En plein centre ville ou en plein nature</p>
-            <label for="site-search">Recherche:</label>
-            <p class="filter">
-                <span>filter</span>
-                <button><span>T</span> economique</button>
-                <button><span>T</span> familial</button>
+            <section class="section1"> <!-- insert section1, research box -->
+                <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
+                <p>En plein centre ville ou en plein nature</p>
 
-            </p>
-            <p>Plus de 500 logements sont disponible dans cette ville</p>
-        </section>
-
-        <section>
-            <h1>Hébergements à Marseille</h1>
-            <article></article>
-            <article></article>
-            <article></article>
-            <article></article>
-            <article></article>
-            <article></article>
-
-                <aside>
-                    <h1>Les plus populaires</h1>
-                    <article></article>
-                    <article></article>
-                    <article></article>
-                </aside>
-
-                <div> <h2>Afficher plus</h2>
+                <div class="Recherche"><i class="fas fa-map-marker-alt"></i>
+                    <label for="site-search">Recherche:</label>
                 </div>
+                
 
-        </section>
+                  <!-- insert filters-->
+                <div class="filter">
+                    <span>Filtres</span>
+                    <button><span><i class="fas fa-money-bill-wave"></i></span> Économique</button>
+                    <button><span><i class="fas fa-child"></i></span> Familial</button>
+                    <button><span><i class="fas fa-heart"></i></span> Romantique</button>
+                    <button><span><i class="fas fa-dog"></i></span> Animaux autorisés</button>
+                </div>  
+                <p> <span><i class="fas fa-info-circle"></i></span> Plus de 500 logements sont disponible dans cette ville</p>
+            </section>
 
-        <section>
-            <h1>Activités a Marseille</h1> 
-        </section>
+            <section class="section2"> <!-- section2 'Hébergements à Marseille'-->
+            <!-- utiliser flexbox-->
+                <h1>Hébergements à Marseille</h1>
+                <div class="container">
+                    <div class="element"><h2>Auberge la Cannebière</h2><p>Nuit à partir de <strong>25€</strong></p></div>
+                    <div class="element"><h2>Hôtel du port</h2><p>Nuit à partir de 52<strong>€</strong></p></div>
+                    <div class="element"><h2>Hôtel Les mouettes</h2><p>Nuit à partir de 76<strong>€</strong></p></div>
+                    <div class="element"><h2>Hôtel de la mer</h2><p>Nuit à partir de 46<strong>€</strong></p></div>
+                    <div class="element"><h2>Auberge Le Panier</h2><p>Nuit à partir de <strong>23€</strong></p></div>
+                    <div class="element"><h2>Hôtel chez Amina</h2><p>Nuit à partir de 96<strong>€</strong></p></div>
+                </div>
+                
+                <div> 
+                    <h2>Afficher plus</h2>
+                </div>
+            </section>
+
+            <aside>   <!--insert aside à droite de la section2 -->
+                <h1>Les plus populaires <span><i class="fas fa-chart-line"></i></span></h1>
+                <!-- utiliser flexbox-->
+                <div class="container2">
+                    <div><h2> Hôtel Le soleil du matin</h2><p>Nuit à partir de 128<strong>€</strong></p></div>
+                    <div><h2> Au cœur de l'eau Chambres d'hotes</h2><p>Nuit à partir de 71<strong>€</strong></p></div>
+                    <div><h2> Hôtel</h2><p>Nuit à partir de 68<strong>€</strong></p></div>
+                </div>
+            </aside>
+
+            <section class="section3"> <!-- section3 'Activités a Marseille'-->
+                <h1>Activités a Marseille</h1>
+                <!-- utiliser flexbox-->
+                <div class="container3">
+                    <div class="Activités img grande">Vieux Port</div>
+                    <div class="Activités">Fort de Pomégues</div>
+                    <div class="Activités">Iles du Frioul</div>
+                    <div class="Activités img grande">Parc National des Calanques</div>
+                    <div class="Activités">Notre-Dame-de-la-Garde</div>
+                    <div class="Activités">Parc Longchamp</div>
+                </div> 
+            </section>
 
         </main>
 
-        <footer>
-            <h2>À propos</h2>
-                <ul>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                </ul>
-            <h2>Nos hébergements</h2>
-                <ul>
-                    <li></li>
-                    <li></li>
-                </ul>
-            <h2>Assistance</h2>
-                <ul>
-                    <li></li>
-                    <li></li>
-                </ul>
+        <footer> <!--insert Footer-->
+
+            <div class="row"> <!-- utiliser grid, créer trois colonnes égales -->
+                <div class="column"> <!-- colonne 1 -->
+                    <p><strong>À propos</strong></p> 
+                        <ul>
+                            <li>Fonctionnement du site</li>
+                            <li>Conditions générales de vente</li>
+                            <li>Données et confidentialité</li>
+                        </ul>
+                </div>
+                <div class="column"> <!-- colonne 2 -->
+                    <p><strong>Nos hébergements</strong></p>
+                        <ul>
+                            <li>Charte qualité</li>
+                            <li>Soumettre votre hôtel</li>
+                        </ul>
+                </div>
+
+                <div class="column"> <!-- colonne 3 -->
+                    <p><strong>Assistance</strong></p>
+                        <ul>
+                            <li>Centre d'aide</li>
+                            <li>Nous contacter</li>
+                        </ul>
+                </div>
+
+            </div> 
+
         </footer>
 
     </body>

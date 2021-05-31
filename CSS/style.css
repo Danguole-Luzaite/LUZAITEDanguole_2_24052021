@@ -1,6 +1,5 @@
-body{
-        background-color: white;
-}
+/* Les couleurs de la charte: bleu #0065FC, 
+plus claire #DEEBFF, le gris pour le fond #F2F2F2. */
 
 
 /* ajouter la police du site "Raleway"*/
@@ -8,5 +7,39 @@ body{
         font-family: 'Raleway';      
         src: url(.font\Raleway-VariableFont_wght.ttf) format('ttf-variations');
         src: url(.font\static\Raleway-Bold.ttf) format('ttf');
+}
 
+body{ 
+        background-color: white;
+        /* ajouter font 'Raleway'*/ 
+        font-family: 'Raleway', sans-serif;
+}
+
+main{
+        margin-left: 50px;
+        margin-right: 50px;
+}
+
+.section2{  /* definir les margins et background de section2 */
+        background-color: #F2F2F2 ;
+        border-radius: 20px;
+        padding-top: 37px;
+        padding-bottom: 38px;
+        padding-left: 40px;
+        padding-right: 40px;
+}
+
+
+
+aside{ /* definir les margins et background de aside */
+        background-color: #F2F2F2 ;
+        border-radius: 20px;
+
+}
+
+
+footer{ /* definir les margins et background du footer */
+        background-color: #F2F2F2 ;
+        margin: 0;
+        padding-left: 40px;
 }
