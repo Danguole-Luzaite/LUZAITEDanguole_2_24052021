@@ -1,37 +1,37 @@
-header{
-    margin: 0 auto;
+#header{
+    display: flex;
     padding-top: 20px;
     margin-left: 50px;
     margin-right: 50px;
+    width: 100%;
+    height: auto;
 }
 
-.logo { /*dimensions et alignement du logo*/
+#header #logo { /*dimensions et alignement du logo*/
     margin: auto;
     float: left;
-    width: 385px;
+    width: 70%;
    height: auto;
 }
 
- img { /* Redimensionner le logo */
+.logo { /* Redimensionner le logo */
     width: 96px;
     height: auto;
     margin: 0;
 }
  
 /* définir la barre de navigation*/
-nav{
+#header nav{
     float: right;
+    width: 30%;
 }
 
 
-nav ul { 
+#header nav ul { 
     list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
 }
 
-nav li{ 
+#header nav li{ 
     margin: 0;
     display: inline;
     padding-inline: 22px;
@@ -39,7 +39,7 @@ nav li{
     font-size: 14px;
 }
  
-.sinscrire {
+#header nav li .sinscrire {
     color: #0065fc;
 }
 

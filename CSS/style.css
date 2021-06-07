@@ -22,34 +22,130 @@ main{
         margin-right: 50px;
 }
 
-.block{
+.border-search{
+        border: solid 1px lightgrey;
+        border-radius: 20px;
+        width: fit-content;
+        padding: 10px;
+}
+.filter{
         display: flex;
-        
+        flex-direction: row;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        font-weight: bold;
+}
+.filter-icon{
+        border: solid 1px #DEEBFF;
+        border-radius: 30px;
+        padding: 10px;
+        background-color: #DEEBFF;      
+}
+button{
+        border: solid 2px lightgrey;
+        border-radius: 15px;
+        padding: 10px;
+        background-color: white;
+        margin-left: 20px;
+        font-weight: bold;
+}
+.block{
+        display: flex;       
 }
 .block .accomodation-details{
         flex-basis: 75%;
         margin-right: 25px;
         background-color: #f2f2f2;
         border-radius: 10px;
+        padding: 30px;
 }
 .block .accomodation-details #container{
         display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
 }
 
-.block .accomodation-details #container .element{
-               
+.block .accomodation-details #container .element{       
         border: white;
         border-radius: 20px;
         text-align: left;
-        flex-basis: 33%;
         flex-grow: 1;
+        margin: 15px;
+        width: 25%;
+        height: auto; 
+        padding: 10px;    
+}
+.element{
+        border: white;
+        background-color: white;
+        box-shadow: 0px 4px 8px 0px rgb(202, 202, 202);       
+        
+}
+.image-hebergement1{
+        border: black;
+        border-radius: 20px 20px 0px 0px;
+        height: 120px;
+        width: auto;
+        margin-bottom: 5px;
+        background-image: url("/Images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg");
+        background-size: cover;    
+}
+
+.image-hebergement2{
+        border: black;
+        border-radius: 20px 20px 0px 0px;
+        height: 120px;
+        width: auto;
+        margin-bottom: 5px;
+        background-image: url("/Images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg");
+        background-size: cover;    
+}
+.image-hebergement3{
+        border: black;
+        border-radius: 20px 20px 0px 0px;
+        height: 120px;
+        width: auto;
+        margin-bottom: 5px;
+        background-image: url("/Images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg");
+        background-size: cover;    
+}
+.image-hebergement4{
+        border: black;
+        border-radius: 20px 20px 0px 0px;
+        height: 120px;
+        width: auto;
+        margin-bottom: 5px;
+        background-image: url("/Images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg");
+        background-size: cover;    
+}
+.image-hebergement5{
+        border: black;
+        border-radius: 20px 20px 0px 0px;
+        height: 120px;
+        width: auto;
+        margin-bottom: 5px;
+        background-image: url("/Images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg");
+        background-size: cover;    
+}
+.image-hebergement6{
+        border: black;
+        border-radius: 20px 20px 0px 0px;
+        height: 120px;
+        width: auto;
+        margin-bottom: 5px;
+        background-image: url("/Images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg");
+        background-size: cover;    
+}
+.fas{
+        color: #0065FC;
 }
 
 .block .popular-accomodation {
         flex-basis: 25%;
         background-color: #f2f2f2;
+        flex-direction: column;
+        padding: 30px;
 }
-
 
 aside{ /* definir les margins et background de aside */
         display: inline-block;
@@ -57,3 +153,17 @@ aside{ /* definir les margins et background de aside */
         border-radius: 20px;
         
 }
+.element2{ /* class="popular-accomodation"*/
+        background-color: white;
+        box-shadow: 0px 4px 8px 0px rgb(202, 202, 202);
+}
+
+.section3{ /* definir avec flexbox pour la section3 'Activités a Marseille' */
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        flex-basis: 100%;
+        margin-top: 40px;
+}
+
+
