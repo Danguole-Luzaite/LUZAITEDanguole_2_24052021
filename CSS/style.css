@@ -5,56 +5,133 @@ plus claire #DEEBFF, le gris pour le fond #F2F2F2. */
 /* ajouter la police du site "Raleway-variable"*/
 @font-face {
         font-family: 'Raleway';      
-        src: url(.font\Raleway-VariableFont_wght.ttf) format('ttf-variations');
-        src: url(.font\static\Raleway-Bold.ttf) format('ttf');
+        src: url(CSS/font/Raleway-VariableFont_wght.ttf) format('ttf');
 }
-
 body{ 
         background-color: white;
         /* ajouter font 'Raleway'*/ 
         font-family: 'Raleway', sans-serif;
-        
-        /* ajouter 'breakpoints'*/
 }
-
 main{
         margin-left: 50px;
         margin-right: 50px;
 }
-
+form {
+        margin-top: 40px;
+}
+/*section1, research box,*/
+p {
+        font-size: 1.2em;
+}
+h1 {
+        font-size: 173%;
+}
 .border-search{
-        border: solid 1px lightgrey;
+        border: solid 1px #f2f2f2;
         border-radius: 20px;
         width: fit-content;
-        padding: 10px;
+        display: flex;
+        align-items: center;
+        margin-top: 30px;
+        margin-bottom: 15px;
 }
-.filter{
+.border-search .map-icon{
+        border: solid 1px #f2f2f2;
+        background-color: #f2f2f2;
+        padding: 15px 20px 15px 20px;
+        border-radius: 15px 0 0 15px;
+}
+.border-search input{
+        font-weight: bold;
+        font-size: large;
+        padding-left: 20px;
+        border: none;
+}
+.label-search{
+        background-color: #f2f2f2;
+}
+label{
+        font-weight: bold;
+        font-size: large;
+        padding-left: 20px;
+        padding-right: 20px;
+        background-color: #0065FC;
+        color: white;
+        border-radius: 0 20px 20px 0;
+        padding: 18px;
+}
+label:hover {
+        cursor: pointer;
+}
+span.search-font-icon { /*cacher search-font-icon pour des écrans plus grands*/
+        display: none;
+}
+/* filter-buttons*/
+.filter-container{
         display: flex;
         flex-direction: row;
-        margin-top: 20px;
-        margin-bottom: 20px;
-        font-weight: bold;
+        flex-wrap: wrap;
+        align-content: space-between;
+        align-items: center;
+        width: fit-content;
+        margin-top: 35px;
+        margin-bottom: 40px;
+        font-weight: bold;   
+}
+.filter-button{
+        border: solid 3px #F2F2F2;
+        border-radius: 60px;
+        background-color: white;
+        margin-left: 25px;
+        display: inline-flex;
+        padding-left: 0px;
+}
+button.filter-button:hover { /* ajouter button hover effect*/
+        cursor: pointer;
+        color: #0065FC;
 }
 .filter-icon{
         border: solid 1px #DEEBFF;
         border-radius: 30px;
-        padding: 10px;
-        background-color: #DEEBFF;      
+        padding: 15px 16px 14px 16px;
+        position: relative;
+        left: -2px;
+        background-color: #DEEBFF;
+        margin: 0px;    
 }
-button{
-        border: solid 2px lightgrey;
-        border-radius: 15px;
-        padding: 10px;
-        background-color: white;
-        margin-left: 20px;
+.fas{
+        color: #0065FC;
+        font-size: 22px;
+}
+i.fas.fa-info { /* style font icon - fa-info*/
+        border: solid 1px #f2f2f2;
+        padding: 10px 15px 10px 15px;
+        border-radius: 50%;
+        font-size: 1em;
+}
+.filter-text{
         font-weight: bold;
+        font-size: 1.4em;
+        padding: 10px 20px 0px 10px;
+        padding-top: 20px;
+        text-align: center;
 }
 .block{
         display: flex;       
 }
+.block p {
+        font-size: 1.05em;
+}
+.block h1 {
+        padding-left: 20px;
+}
+h3 {
+        font-size: 1.23em;
+}
 .block .accomodation-details{
         flex-basis: 75%;
         margin-right: 25px;
+        margin-top: 25px;
         background-color: #f2f2f2;
         border-radius: 10px;
         padding: 30px;
@@ -64,14 +141,13 @@ button{
         flex-wrap: wrap;
         justify-content: space-between;
 }
-
 .block .accomodation-details #container .element{       
         border: white;
         border-radius: 20px;
         text-align: left;
         flex-grow: 1;
         margin: 15px;
-        width: 25%;
+        max-width: 400px;
         height: auto; 
         padding: 10px;    
 }
@@ -81,63 +157,22 @@ button{
         box-shadow: 0px 4px 8px 0px rgb(202, 202, 202);       
         
 }
-.image-hebergement1{
-        border: black;
+.block-image-hebergement .image-hebergement{
         border-radius: 20px 20px 0px 0px;
-        height: 120px;
-        width: auto;
-        margin-bottom: 5px;
-        background-image: url("/Images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg");
-        background-size: cover;    
+        height: 140px;
+        width: 100%;
+        margin-bottom: 5px;   
 }
-
-.image-hebergement2{
-        border: black;
-        border-radius: 20px 20px 0px 0px;
-        height: 120px;
-        width: auto;
-        margin-bottom: 5px;
-        background-image: url("/Images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg");
-        background-size: cover;    
+.image-hebergement{
+        object-fit: cover; 
+        object-position: center;
 }
-.image-hebergement3{
-        border: black;
-        border-radius: 20px 20px 0px 0px;
-        height: 120px;
-        width: auto;
-        margin-bottom: 5px;
-        background-image: url("/Images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg");
-        background-size: cover;    
+i.fas.fa-star { /* modifier font icon-star*/
+        font-size: 1.1em;
 }
-.image-hebergement4{
-        border: black;
-        border-radius: 20px 20px 0px 0px;
-        height: 120px;
-        width: auto;
-        margin-bottom: 5px;
-        background-image: url("/Images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg");
-        background-size: cover;    
-}
-.image-hebergement5{
-        border: black;
-        border-radius: 20px 20px 0px 0px;
-        height: 120px;
-        width: auto;
-        margin-bottom: 5px;
-        background-image: url("/Images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg");
-        background-size: cover;    
-}
-.image-hebergement6{
-        border: black;
-        border-radius: 20px 20px 0px 0px;
-        height: 120px;
-        width: auto;
-        margin-bottom: 5px;
-        background-image: url("/Images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg");
-        background-size: cover;    
-}
-.fas{
-        color: #0065FC;
+.section2 a{ /*un lien pour block, popular-accomodation, plus-populaires et "Afficher plus" */
+        text-decoration: none;
+        color: black;
 }
 
 .block .popular-accomodation {
@@ -145,25 +180,196 @@ button{
         background-color: #f2f2f2;
         flex-direction: column;
         padding: 30px;
+        margin-top: 25px;
 }
-
+.block .popular-accomodation h1{
+        position: relative;
+        font-size: 1.5em;
+}
+.block .popular-accomodation h1 span{
+        position: absolute;
+        right: 0px;
+}
+.block .popular-accomodation .element2{ /* class="popular-accomodation"*/
+        background-color: white;
+        box-shadow: 0px 4px 8px 0px rgb(202, 202, 202);
+        display: table;
+        border-radius: 20px;
+        padding: 10px;
+        margin: 15px;
+        max-width: 400px;
+}
+.block .popular-accomodation .element2.last .elt-image{
+        overflow: hidden;
+        border-radius: 15px 0px 0 15px;
+}
+.block .popular-accomodation .element2.last .elt-image img{
+        position: relative;
+        bottom: 105px;
+}
+.block .popular-accomodation .element2 .elt-image{
+        float: left;
+        width: 200px;
+        height: 150px;
+}
+.block .popular-accomodation .element2 .elt-image img{
+        width: 100%;
+        border-radius: 15px 0px 0 15px;
+}
+.block .popular-accomodation .element2 .elt-desc{
+        float: left;
+        max-width: 190px;
+        margin-left: 10px;
+}
 aside{ /* definir les margins et background de aside */
         display: inline-block;
         object-position: right;
         border-radius: 20px;
-        
 }
-.element2{ /* class="popular-accomodation"*/
-        background-color: white;
-        box-shadow: 0px 4px 8px 0px rgb(202, 202, 202);
-}
-
-.section3{ /* definir avec flexbox pour la section3 'Activités a Marseille' */
+#container2{ 
         display: flex;
         flex-wrap: wrap;
-        flex-direction: row;
-        flex-basis: 100%;
-        margin-top: 40px;
+        align-items: center;
+        flex-direction: column;
+        align-content: space-between;
 }
 
+/*section3 - 'Activités a Marseille'*/
+.section3{ 
+        margin-top: 40px;
+        margin-bottom: 40px;
+}
+div#activites a {
+        text-decoration: none;
+        color: black;
+}
+div#container3 { /* definir avec flexbox pour la section3 'Activités a Marseille' */
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin-top: 30px;
+        margin-bottom: 20px;
+}
+#container3 h3 { /* modification h3 dans #container3*/
+        height: auto;
+        object-position: center;
+        padding: 5px 20px;
+}
+.Activities-one, .Activities-double-column {
+        max-width: 476px;
+        height: 755px;
+        margin-bottom: 50px;
+}
+.Activities-double-column {
+        display: flex;
+        flex-wrap: nowrap;
+        align-content: space-between;
+        flex-direction: column;
+}
+.act-img-card-big, .act-img-card{
+        border: solid 1px #f2f2f2;
+        border-radius: 20px;
+        box-shadow: 0px 4px 8px 0px rgb(202 202 202);   
+}
+.act-img-card-big {
+        height: 100%;
+}
+.act-img-card {
+        height: 46.69%;
+        margin-bottom: 50px;
+}
+#container3 img.img-big, img.img-double { /*image size et fit*/
+        width: 100%;
+        object-fit: cover;
+        object-position: center;
+        border-radius: 20px 20px 0px 0px;
+}
+#container3 img.img-big {
+        height: 91%;
+}
+#container3 img.img-double{
+        height: 80%;   
+}
 
+/* : @media (max-width: 767px) */
+@media all and (max-width:767px){
+        main {
+                margin: 0 auto;
+        }
+        /*section_search-section*/
+        section.search-section {  
+                margin: 20px;
+        }
+        .label-search span.text-rech{ /* cacher text "Rechercher" pour les mobiles*/
+                display: none;
+        }
+        span.search-font-icon {
+                display: unset;
+        }
+        i.fas.fa-search {
+                color: white;
+        }
+        label{
+                border-radius: 20px;
+        }
+        p.text-filtres {
+                font-size: 1.25em;
+                width: 100%;
+        }
+        .filter-button {
+                margin-left: 0px;
+                margin-right: 20px;
+                margin-bottom: 20px;
+        }
+        span.info-icon {
+                display: block;
+                float: left;
+                top: -11px;
+                position: relative;
+                margin-left: 20px;
+                margin-right: 15px;
+        }
+        /* section2: hebergements et plus populaires */
+        section#hebergement {
+                margin: 0;
+        }
+        .block {
+                display: flex;
+                flex-direction: column-reverse;
+        }
+        aside {
+                border-radius: 0px;
+                margin: auto;
+        }
+        .block .accomodation-details {
+                
+                margin-right: 0px;
+                background-color: transparent;
+                border-radius: 0px;
+                padding: 30px;
+                margin: 0 auto;
+        }
+        .block h1 {
+                padding-left: 5px;
+        }
+
+        /* section3 "Activites a Marseille" */
+        div#container3 {
+                display: flex;
+                flex-wrap: wrap;
+                flex-direction: column;
+                align-content: center;
+        }
+        .Activities-one {
+                height: auto;
+        }
+        .Activities-one, .Activities-double-column {
+                max-width: 80%;
+        }
+        .act-img-card-big {
+                height: 37%;
+        }
+        #container3 img.img-big {
+                height: 73%;
+        }
+}

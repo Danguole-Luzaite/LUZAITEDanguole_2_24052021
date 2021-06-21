@@ -1,47 +1,95 @@
 #header{
     display: flex;
-    padding-top: 20px;
-    margin-left: 50px;
-    margin-right: 50px;
-    width: 100%;
-    height: auto;
 }
-
 #header #logo { /*dimensions et alignement du logo*/
-    margin: auto;
-    float: left;
-    width: 70%;
-   height: auto;
+    flex-basis: 25%;
 }
-
+#header #logo a{
+    display: inline-block;
+}
 .logo { /* Redimensionner le logo */
-    width: 96px;
+    width: 110px;
     height: auto;
     margin: 0;
+    padding-left: 40px;
 }
  
 /* définir la barre de navigation*/
 #header nav{
-    float: right;
-    width: 30%;
+    flex-basis: 75%;
 }
-
-
 #header nav ul { 
     list-style-type: none;
-}
-
-#header nav li{ 
+    text-align: right;
+    padding: 0px;
     margin: 0;
+}
+#header nav ul li a{
+    text-decoration: none;
+    color: black;
+    padding: 30px 50px;
+    display: inline-block;
+    border-top: 3px solid #fff;
+}
+#header nav ul li:hover a{
+    border-top: 3px solid #0065FC;
+    color: #0065FC;
+}
+#header nav ul li.active a{   
+    
+    border-top: 3px solid #0065FC;
+    color: #0065FC;
+}
+#header nav ul li{ 
+    margin: -2px;
     display: inline;
-    padding-inline: 22px;
     font-family: 'Raleway', sans-serif;
-    font-size: 14px;
+    font-size: 1.1em;
 }
- 
-#header nav li .sinscrire {
+#header nav ul li .sinscrire {
     color: #0065fc;
+    border-top: 0px;
 }
-
-/* add link hover effect and color */
+#header nav ul li:hover .sinscrire{
+    border-top: 0px;
+}
+/* @media (max-width: 767px) */
+@media all and (max-width: 767px){
+    #header {
+        display: block;
+    }
+    .logo{
+        padding-left: 20px;
+    }
+    #header nav{
+        position: relative;  
+    }
+    #header nav ul{
+        text-align: center;
+        margin-top: 37px;
+    }
+    #header nav ul li{
+        width: 49%;
+        display: inline-block;
+        margin: 0px;
+    }
+    #header nav ul li a{
+        padding: 5px 5px;
+        border-top: 0px;
+        display: block;
+    }
+    #header nav ul li.active a{
+        border-bottom: 3px solid #0065FC;
+        border-top: 0px;
+    }
+    #header nav ul li:hover a{
+        border-top: 0px;
+        border-bottom: 3px solid #0065FC;
+    }
+    #header nav ul li.last{
+        position: absolute;
+        top: -64px;
+        right: 0px;
+    } 
+}
 
