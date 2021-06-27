@@ -4,17 +4,20 @@ plus claire #DEEBFF, le gris pour le fond #F2F2F2. */
 
 /* ajouter la police du site "Raleway-variable"*/
 @font-face {
-        font-family: 'Raleway';      
+        font-family: "Raleway";      
         src: url(CSS/font/Raleway-VariableFont_wght.ttf) format('ttf');
+        font-family: "Raleway-Regular";
+        src: url(/CSS/font/Raleway-Regular.ttf) format('ttf');
 }
-body{ 
-        background-color: white;
-        /* ajouter font 'Raleway'*/ 
-        font-family: 'Raleway', sans-serif;
+body{
+        /* ajouter font "Raleway"*/ 
+        font-family: "Raleway", "Raleway-Regular", sans-serif;
 }
-main{
-        margin-left: 50px;
-        margin-right: 50px;
+.max-width{
+        max-width: 1500px;
+        margin: auto;
+        padding-left: 5px;
+        padding-right: 5px;
 }
 form {
         margin-top: 40px;
@@ -24,12 +27,12 @@ p {
         font-size: 1.2em;
 }
 h1 {
-        font-size: 173%;
+        font-size: 170%;
 }
 .border-search{
         border: solid 1px #f2f2f2;
         border-radius: 20px;
-        width: fit-content;
+        width: max-content;
         display: flex;
         align-items: center;
         margin-top: 30px;
@@ -40,6 +43,9 @@ h1 {
         background-color: #f2f2f2;
         padding: 15px 20px 15px 20px;
         border-radius: 15px 0 0 15px;
+}
+i.fas.fa-map-marker-alt {
+        color: black;
 }
 .border-search input{
         font-weight: bold;
@@ -78,6 +84,9 @@ span.search-font-icon { /*cacher search-font-icon pour des écrans plus grands*/
         margin-bottom: 40px;
         font-weight: bold;   
 }
+.text-filtres {
+        font-size: 1.34em;
+}
 .filter-button{
         border: solid 3px #F2F2F2;
         border-radius: 60px;
@@ -85,6 +94,7 @@ span.search-font-icon { /*cacher search-font-icon pour des écrans plus grands*/
         margin-left: 25px;
         display: inline-flex;
         padding-left: 0px;
+        margin-top: 5px;
 }
 button.filter-button:hover { /* ajouter button hover effect*/
         cursor: pointer;
@@ -109,11 +119,10 @@ i.fas.fa-info { /* style font icon - fa-info*/
         border-radius: 50%;
         font-size: 1em;
 }
-.filter-text{
-        font-weight: bold;
-        font-size: 1.4em;
-        padding: 10px 20px 0px 10px;
-        padding-top: 20px;
+.filter-text {
+        font-weight: bolder;
+        font-size: 1.3em;
+        padding: 15px 25px 0px 20px;
         text-align: center;
 }
 .block{
@@ -122,34 +131,52 @@ i.fas.fa-info { /* style font icon - fa-info*/
 .block p {
         font-size: 1.05em;
 }
-.block h1 {
-        padding-left: 20px;
+.block h2 {
+        padding-left: 0px;
 }
 h3 {
         font-size: 1.23em;
 }
 .block .accomodation-details{
-        flex-basis: 75%;
+        flex-basis: 73%;
         margin-right: 25px;
         margin-top: 25px;
         background-color: #f2f2f2;
         border-radius: 10px;
-        padding: 30px;
+        padding-left: 45px;
+        padding-right: 45px;
+        padding-top: 27px;
 }
 .block .accomodation-details #container{
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
+        min-height: 647px;
 }
-.block .accomodation-details #container .element{       
+.block .accomodation-details #container .element {
         border: white;
         border-radius: 20px;
         text-align: left;
         flex-grow: 1;
-        margin: 15px;
-        max-width: 400px;
-        height: auto; 
-        padding: 10px;    
+        max-width: 271px;
+        min-width: 266px;
+        padding: 10px;
+        height: 250px;
+        margin-right: 5px;
+        margin-bottom: 15px;
+}
+.block .accomodation-details #container .element h3 {
+        margin-bottom: 0px;
+        margin-left: 10px;
+        margin-top: 5px;
+}
+.block .accomodation-details #container .element p {
+        margin-top: 7px;
+        margin-bottom: 7px;
+        margin-left: 10px;
+}
+.block .accomodation-details #container .element .stars {
+        margin-left: 10px;
 }
 .element{
         border: white;
@@ -173,53 +200,74 @@ i.fas.fa-star { /* modifier font icon-star*/
 .section2 a{ /*un lien pour block, popular-accomodation, plus-populaires et "Afficher plus" */
         text-decoration: none;
         color: black;
+        display: block;
 }
-
+.section2 .show-more{
+        font-weight: 600;
+        font-size: 1.2rem;
+}
 .block .popular-accomodation {
-        flex-basis: 25%;
+        flex-basis: 27%;
         background-color: #f2f2f2;
         flex-direction: column;
         padding: 30px;
         margin-top: 25px;
 }
-.block .popular-accomodation h1{
+.block .popular-accomodation h2{
         position: relative;
         font-size: 1.5em;
 }
-.block .popular-accomodation h1 span{
+.block .popular-accomodation h2 span{
         position: absolute;
         right: 0px;
+}
+i.fas.fa-chart-line {
+        color: black;
+        font-size: 1.2em;
 }
 .block .popular-accomodation .element2{ /* class="popular-accomodation"*/
         background-color: white;
         box-shadow: 0px 4px 8px 0px rgb(202, 202, 202);
-        display: table;
         border-radius: 20px;
         padding: 10px;
-        margin: 15px;
+        margin-bottom: 26px;
         max-width: 400px;
+        height: var(--var-height-box-element);
+}
+.block .popular-accomodation .element2 a {
+        display: flex;
 }
 .block .popular-accomodation .element2.last .elt-image{
         overflow: hidden;
-        border-radius: 15px 0px 0 15px;
 }
-.block .popular-accomodation .element2.last .elt-image img{
-        position: relative;
-        bottom: 105px;
-}
-.block .popular-accomodation .element2 .elt-image{
-        float: left;
-        width: 200px;
-        height: 150px;
-}
-.block .popular-accomodation .element2 .elt-image img{
+.block .popular-accomodation .element2.last .elt-image img {
+        position: initial;
         width: 100%;
+        height: 100%;
+}
+.block .popular-accomodation .element2 .elt-image {
+        width: 200px;
+        height: var(--var-height-box-element);
+        overflow: hidden;
         border-radius: 15px 0px 0 15px;
+}
+.block .popular-accomodation .element2 .elt-image img {
+        border-radius: 15px 0px 0 15px;
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
 }
 .block .popular-accomodation .element2 .elt-desc{
-        float: left;
-        max-width: 190px;
+        width: 72%;
         margin-left: 10px;
+        position: relative;
+}
+.block .popular-accomodation .element2 .elt-desc h3 {
+        margin-bottom: 0px;
+}
+.block .popular-accomodation .element2 .elt-desc .stars {
+        position: absolute;
+        bottom: 5px;
 }
 aside{ /* definir les margins et background de aside */
         display: inline-block;
@@ -246,37 +294,41 @@ div#activites a {
 div#container3 { /* definir avec flexbox pour la section3 'Activités a Marseille' */
         display: flex;
         flex-wrap: wrap;
-        justify-content: space-between;
+        justify-content: space-around;
         margin-top: 30px;
-        margin-bottom: 20px;
 }
-#container3 h3 { /* modification h3 dans #container3*/
+/* modification h3 dans #container3*/ 
+#container3 h3 {
         height: auto;
         object-position: center;
-        padding: 5px 20px;
+        padding-left: 15px;
+        margin-bottom: 0px;
+        margin-left: 10px;
 }
-.Activities-one, .Activities-double-column {
-        max-width: 476px;
-        height: 755px;
-        margin-bottom: 50px;
+.Activities-one {
+        height: 500px;
 }
 .Activities-double-column {
         display: flex;
         flex-wrap: nowrap;
         align-content: space-between;
         flex-direction: column;
+        max-height: 499px;
 }
-.act-img-card-big, .act-img-card{
-        border: solid 1px #f2f2f2;
+.Activities-one, .Activities-double-column {
+        max-width: 340px;
+        margin-bottom: 20px;
+}
+.act-img-card-big, .act-img-card {
         border-radius: 20px;
-        box-shadow: 0px 4px 8px 0px rgb(202 202 202);   
+        box-shadow: 0px 0px 9px 0px rgb(202 202 202);
 }
 .act-img-card-big {
         height: 100%;
 }
 .act-img-card {
-        height: 46.69%;
-        margin-bottom: 50px;
+        height: 48%;
+        margin-bottom: 20px;
 }
 #container3 img.img-big, img.img-double { /*image size et fit*/
         width: 100%;
@@ -285,22 +337,76 @@ div#container3 { /* definir avec flexbox pour la section3 'Activités a Marseill
         border-radius: 20px 20px 0px 0px;
 }
 #container3 img.img-big {
-        height: 91%;
+        height: 89%;
 }
 #container3 img.img-double{
-        height: 80%;   
+        height: 76%;   
+}
+/* : @media (min-width:1040px) and (max-width: 1420px) */
+@media (min-width:1040px) and (max-width: 1410px){
+        .block .accomodation-details #container .element {
+                max-width: 45%;
+                width: auto;
+                margin-bottom: 20px;
+        }
+        .block .popular-accomodation{
+                padding: 20px;
+        }
+        .block .popular-accomodation .element2{
+                width: 95%;
+        }
+        .plus {
+                margin-bottom: 20px;
+        }
+        .block .accomodation-details{
+                padding-left: 20px;
+                padding-right: 20px;
+        }
+        .block p{
+                font-size: 1em;
+        }
+        h3 {
+                font-size: 1.2em;
+        }
+}
+/* : @media (min-width:670px) and (max-width: 820px) */
+@media (min-width:724px) and (max-width: 820px){
+        .block .accomodation-details{
+                padding-left: 10px;
+                padding-right: 10px;
+        }
+        .block .accomodation-details #container .element{
+                min-width: 255px;
+        }
+        .block .popular-accomodation{
+                padding: 13px;
+        }
+        .block .popular-accomodation .element2{
+                max-width: 275px;
+        }
+        /* minimiser la taille de la police*/
+        .block .popular-accomodation .element2 .elt-desc p{
+                font-size: 1em;
+        }
+        h3{
+                font-size: 1.1em;  
+        }
 }
 
 /* : @media (max-width: 767px) */
-@media all and (max-width:767px){
+
+@media all and (max-width:724px){
         main {
-                margin: 0 auto;
+                margin: 0 auto; 
+        }
+        .filter-text{
+                font-size: 1.3em;
         }
         /*section_search-section*/
         section.search-section {  
                 margin: 20px;
         }
-        .label-search span.text-rech{ /* cacher text "Rechercher" pour les mobiles*/
+        .label-search span.text-rech{ /* cacher text "Rechercher" pour @media (max-width: 653px)*/
                 display: none;
         }
         span.search-font-icon {
@@ -336,40 +442,84 @@ div#container3 { /* definir avec flexbox pour la section3 'Activités a Marseill
         .block {
                 display: flex;
                 flex-direction: column-reverse;
+                background-color: #f2f2f2;
+                margin-top: 40px;
         }
         aside {
                 border-radius: 0px;
                 margin: auto;
         }
+        .block .popular-accomodation {
+                margin-top: 10px;
+        }
         .block .accomodation-details {
-                
                 margin-right: 0px;
                 background-color: transparent;
                 border-radius: 0px;
-                padding: 30px;
-                margin: 0 auto;
+                background-color: white;
+        }
+        .block .accomodation-details #container{
+                justify-content: center;
+        }
+        .block .accomodation-details #container .element {
+                max-width: 406px;
+                min-width: 340px;
+                margin-bottom: 20px;
+                margin-right: 5px;
+                height: auto;
+        }
+        .block .popular-accomodation .element2 .elt-desc .stars {
+                font-size: 0.8em;
+        }
+        .block .accomodation-details #container .element .stars {
+                font-size: 0.8em;
         }
         .block h1 {
                 padding-left: 5px;
         }
-
+        .block .plus{
+                margin-top: 15px;
+                font-weight: bold;
+                font-size: 1.1em;  
+        }
         /* section3 "Activites a Marseille" */
-        div#container3 {
+        .section3 #activites {
+                justify-content: center;
                 display: flex;
+                flex-direction: column;
                 flex-wrap: wrap;
+        }
+        .section3 #activites #container3 {
                 flex-direction: column;
                 align-content: center;
         }
-        .Activities-one {
+        .section3 #activites h1 {
+                font-size: 170%;
+                padding-left: 25px;
+        }
+        .section3 #activites #container3 .Activities-one {
                 height: auto;
         }
-        .Activities-one, .Activities-double-column {
-                max-width: 80%;
+        .section3 #activites #container3 .act-img-card-big{
+                margin-bottom: 10px;
         }
-        .act-img-card-big {
-                height: 37%;
+        .section3 #activites #container3 .act-img-card {
+                margin-bottom: 30px;
         }
-        #container3 img.img-big {
-                height: 73%;
+        .section3 #activites #container3 img.img-big, img.img-double {
+                max-height: 160px;
         }
+        
+        
+        .section3 #activites #container3 .Activities-one, .Activities-double-column {
+                max-width: 406px;
+                min-width: 340px;
+                width: 80%;
+        }
+        .section3 #activites #container3 h3 {
+                padding-bottom: 15px;
+        }
+}
+:root{
+        --var-height-box-element: 182px;
 }

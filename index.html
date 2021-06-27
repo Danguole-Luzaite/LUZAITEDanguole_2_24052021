@@ -11,7 +11,7 @@
 
     <body>
 
-        <header id="header">
+        <header id="header" class="max-width">
            
                 <!-- insert Reservia logo -->
             <div id="logo" > 
@@ -28,7 +28,7 @@
             
         </header>
 
-        <main>
+        <main class="max-width">
 
             <section class="search-section"> <!-- insert section1, research box, filters, flexbox -->
                 <form action="action_page.php" method="GET">
@@ -37,7 +37,7 @@
                     <div class="search"> <!-- insert  research box -->
                         <div class="border-search">
                             <div class="map-icon">
-                                <i class="fas fa-map-marker-alt" style="color: black;"></i>
+                                <i class="fas fa-map-marker-alt"></i>
                             </div>
                             <div>
                                 <input type="text" name="search-location" id="search-location" placeholder="Marseille, France">
@@ -80,7 +80,7 @@
                 </p>
                 <div class="block">
                     <div class="accomodation-details">
-                        <h1>Hébergements à Marseille</h1>
+                        <h2>Hébergements à Marseille</h2>
                         <div id="container">
                             <div class="element">
                                 <a href="#">
@@ -179,21 +179,19 @@
                                 </a>
                             </div>
                         </div>
-                        <div> <!-- Afficher plus -->
-                            <a href="#"> 
-                                <h3>Afficher plus</h3>
-                            </a>
+                        <div class="show-more"> <!-- Afficher plus -->
+                            <a href="#" class="plus">Afficher plus</a>
                         </div>
                     </div>
 
                     <aside class="popular-accomodation">   <!--insert aside, popular-accomodation à droite de la section2 -->
-                        <h1>Les plus populaires<span><i class="fas fa-chart-line" style="color: black; font-size: 1.2em;"></i></span></h1>
+                        <h2>Les plus populaires<span><i class="fas fa-chart-line"></i></span></h2>
                         <!-- utiliser flexbox-->
                         <div id="container2">
                             <div class="element2">
                                 <a href="#">
                                     <div class="elt-image">
-                                        <img src="Images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="Hôtel Le soleil du matin" style="height: 100%;">
+                                        <img src="Images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="Hôtel Le soleil du matin">
                                     </div> 
                                     <div class="elt-desc">
                                         <h3>Hôtel Le soleil du matin</h3>
@@ -232,7 +230,7 @@
                                         <img src="Images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg" alt="Hôtel Tout bleau et Blanc">
                                     </div>
                                     <div class="elt-desc">
-                                        <h3>Hôtel Tout bleau et Blanc</h3>
+                                        <h3>Hôtel Tout bleu et Blanc</h3>
                                         <p>Nuit à partir de 68<strong>€</strong></p>
                                         <div class="stars"> <!--ajouter etoiles-->
                                             <span><i class="fas fa-star"></i></span>
@@ -256,7 +254,7 @@
                         <div class="Activities-one">
                             <a href="#">
                                 <div class="act-img-card-big">
-                                    <img class="img-big" src="Images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="Vieux Port">
+                                    <img class="img-big" src="Images/activites/3_medium/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="Vieux Port">
                                     <h3>Vieux Port</h3>
                                 </div>
                             </a>
@@ -281,7 +279,7 @@
                         <div class="Activities-one">
                             <a href="#">
                                 <div class="act-img-card-big">
-                                    <img class="img-big" src="Images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="Parc National des Calanques">
+                                    <img class="img-big" src="Images/activites/3_medium/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="Parc National des Calanques">
                                     <h3>Parc National des Calanques</h3>
                                 </div>
                             </a>
@@ -309,9 +307,9 @@
         </main>
 
         <footer id="footer"> <!--insert Footer-->
-            
+            <div class="max-width">
                 <div class="column"> <!-- colonne 1 -->
-                    <h3><strong>À propos</strong></h3> 
+                    <h3>À propos</h3> 
                         <ul>
                             <li><a href="#">Fonctionnement du site</a></li>
                             <li><a href="#">Conditions générales de vente</a></li>
@@ -319,7 +317,7 @@
                         </ul>
                 </div>
                 <div class="column"> <!-- colonne 2 -->
-                    <h3><strong>Nos hébergements</strong></h3>
+                    <h3>Nos hébergements</h3>
                         <ul>
                             <li><a href="#">Charte qualité</a></li>
                             <li><a href="#">Soumettre votre hôtel</a></li>
@@ -327,13 +325,13 @@
                 </div>
 
                 <div class="column"> <!-- colonne 3 -->
-                    <h3><strong>Assistance</strong></h3>
+                    <h3>Assistance</h3>
                         <ul>
                             <li><a href="#">Centre d'aide</a></li>
                             <li><a href="#">Nous contacter</a></li>
                         </ul>
                 </div>
-
+            </div>
         </footer>
 
     </body>

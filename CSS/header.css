@@ -10,8 +10,7 @@
 .logo { /* Redimensionner le logo */
     width: 110px;
     height: auto;
-    margin: 0;
-    padding-left: 40px;
+    margin: 0px;
 }
  
 /* définir la barre de navigation*/
@@ -49,6 +48,7 @@
 #header nav ul li .sinscrire {
     color: #0065fc;
     border-top: 0px;
+    padding-right: 0px;
 }
 #header nav ul li:hover .sinscrire{
     border-top: 0px;
