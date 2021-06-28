@@ -32,7 +32,6 @@ h1 {
 .border-search{
         border: solid 1px #f2f2f2;
         border-radius: 20px;
-        width: max-content;
         display: flex;
         align-items: center;
         margin-top: 30px;
@@ -52,9 +51,13 @@ i.fas.fa-map-marker-alt {
         font-size: large;
         padding-left: 20px;
         border: none;
+        width: 100%;
 }
 .label-search{
         background-color: #f2f2f2;
+}
+.label-search label {
+        margin-left: 10px;
 }
 label{
         font-weight: bold;
@@ -246,7 +249,8 @@ i.fas.fa-chart-line {
         height: 100%;
 }
 .block .popular-accomodation .element2 .elt-image {
-        width: 200px;
+        width: 28%;
+        max-width: 200px;
         height: var(--var-height-box-element);
         overflow: hidden;
         border-radius: 15px 0px 0 15px;
@@ -290,6 +294,8 @@ aside{ /* definir les margins et background de aside */
 div#activites a {
         text-decoration: none;
         color: black;
+        display: block;
+        height: 100%;
 }
 div#container3 { /* definir avec flexbox pour la section3 'Activités a Marseille' */
         display: flex;
@@ -465,9 +471,8 @@ div#container3 { /* definir avec flexbox pour la section3 'Activités a Marseill
         }
         .block .accomodation-details #container .element {
                 max-width: 406px;
-                min-width: 340px;
+                min-width: 250px;
                 margin-bottom: 20px;
-                margin-right: 5px;
                 height: auto;
         }
         .block .popular-accomodation .element2 .elt-desc .stars {
@@ -515,7 +520,7 @@ div#container3 { /* definir avec flexbox pour la section3 'Activités a Marseill
         
         .section3 #activites #container3 .Activities-one, .Activities-double-column {
                 max-width: 406px;
-                min-width: 340px;
+                min-width: 250px;
                 width: 80%;
         }
         .section3 #activites #container3 h3 {
