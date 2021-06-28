@@ -453,10 +453,12 @@ div#container3 { /* definir avec flexbox pour la section3 'Activités a Marseill
                 margin-top: 10px;
         }
         .block .accomodation-details {
-                margin-right: 0px;
                 background-color: transparent;
                 border-radius: 0px;
                 background-color: white;
+                margin: auto;
+                padding-left: 20px;
+                padding-right: 20px;      
         }
         .block .accomodation-details #container{
                 justify-content: center;
