@@ -27,20 +27,22 @@ p {
         font-size: 1.2em;
 }
 h1 {
-        font-size: 170%;
+        font-size: 1.7rem;
 }
 .border-search{
         border: solid 1px #f2f2f2;
         border-radius: 20px;
         display: flex;
         align-items: center;
+        justify-content: space-between;
         margin-top: 30px;
         margin-bottom: 15px;
+        width: 425px;
 }
 .border-search .map-icon{
         border: solid 1px #f2f2f2;
         background-color: #f2f2f2;
-        padding: 15px 20px 15px 20px;
+        padding: 20px 20px 16px 20px;
         border-radius: 15px 0 0 15px;
 }
 i.fas.fa-map-marker-alt {
@@ -52,9 +54,6 @@ i.fas.fa-map-marker-alt {
         padding-left: 20px;
         border: none;
         width: 100%;
-}
-.label-search{
-        background-color: #f2f2f2;
 }
 .label-search label {
         margin-left: 10px;
@@ -68,7 +67,7 @@ label{
         background-color: #0065FC;
         color: white;
         border-radius: 0 20px 20px 0;
-        padding: 18px;
+        padding: 20px;
 }
 label:hover {
         cursor: pointer;
@@ -376,17 +375,20 @@ div#container3 { /* definir avec flexbox pour la section3 'Activités a Marseill
                 font-size: 1.2em;
         }
 }
-/* : @media (min-width:725px) and (max-width: 820px) */
-@media (min-width:725px) and (max-width: 820px){
+/* : @media (min-width:768px) and (max-width: 1039px) */
+@media (min-width:768px) and (max-width: 1039px){
         .block .accomodation-details{
                 padding-left: 10px;
                 padding-right: 10px;
+                flex-basis: 50%;
         }
         .block .accomodation-details #container .element{
-                min-width: 255px;
+                min-width: 310px;
+                max-width: 445px;
         }
         .block .popular-accomodation{
                 padding: 13px;
+                flex-basis: 50%;
         }
         .block .popular-accomodation .element2{
                 max-width: 275px;
@@ -400,9 +402,9 @@ div#container3 { /* definir avec flexbox pour la section3 'Activités a Marseill
         }
 }
 
-/* : @media (max-width: 724px) */
+/* : @media (max-width: 767px) version mobile */
 
-@media all and (max-width:724px){
+@media all and (max-width:767px){
         main {
                 margin: 0 auto; 
         }
@@ -412,6 +414,9 @@ div#container3 { /* definir avec flexbox pour la section3 'Activités a Marseill
         /*section_search-section*/
         section.search-section {  
                 margin: 20px;
+        }
+        .border-search {
+                width: 100%;
         }
         .label-search span.text-rech{ /* cacher text "Rechercher" pour @media (max-width: 724px)*/
                 display: none;

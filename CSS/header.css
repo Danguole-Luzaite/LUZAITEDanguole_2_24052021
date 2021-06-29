@@ -53,8 +53,8 @@
 #header nav ul li:hover .sinscrire{
     border-top: 0px;
 }
-/* @media (max-width: 724px) */
-@media all and (max-width: 724px){
+/* @media (max-width: 768px) */
+@media all and (max-width: 768px){
     #header {
         display: block;
     }
