@@ -1,9 +1,10 @@
 #footer{
     background-color: #F2F2F2 ;
+    margin-top: 60px;
 }
 #footer .max-width{
-        padding: 20px;
-        display: flex;
+    padding: 45px;
+    display: flex;
 }
 #footer .column{
     flex: 1 0 33%;
@@ -29,8 +30,8 @@
     font-weight: bold;
 }
 
-/* : @media (max-width: 768px) */
-@media all and (max-width:768px){
+/* : @media (max-width: 767px) */
+@media all and (max-width: 767px){
     #footer .max-width {
         display: flex;
         flex-wrap: wrap;

@@ -3,6 +3,7 @@
 }
 #header #logo { /*dimensions et alignement du logo*/
     flex-basis: 25%;
+    margin-top: 35px;
 }
 #header #logo a{
     display: inline-block;
@@ -26,7 +27,7 @@
 #header nav ul li a{
     text-decoration: none;
     color: black;
-    padding: 30px 50px;
+    padding: 40px 45px;
     display: inline-block;
     border-top: 3px solid #fff;
 }
@@ -34,27 +35,29 @@
     border-top: 3px solid #0065FC;
     color: #0065FC;
 }
-#header nav ul li.active a{   
-    
-    border-top: 3px solid #0065FC;
-    color: #0065FC;
-}
 #header nav ul li{ 
     margin: -2px;
     display: inline;
-    font-family: "Raleway", sans-serif;
     font-size: 1.1em;
 }
 #header nav ul li .sinscrire {
     color: #0065fc;
     border-top: 0px;
-    padding-right: 0px;
+    padding-right: 60px;
 }
 #header nav ul li:hover .sinscrire{
     border-top: 0px;
 }
-/* @media (max-width: 768px) */
-@media all and (max-width: 768px){
+/*: @media (min-width: 768px) and (max-width: 1186px)*/ 
+
+@media (min-width: 768px) and (max-width: 1186px) {
+    #header nav ul li .sinscrire {
+        padding-right: 0px;
+    }
+}
+
+/* @media (max-width: 767px) */
+@media all and (max-width: 767px){
     #header {
         display: block;
     }
@@ -69,34 +72,39 @@
         margin-top: 37px;
     }
     #header nav ul li{
-        width: 49%;
+        width: 50%;
         display: inline-block;
-        margin: 0px;
     }
     #header nav ul li a{
-        padding: 5px 5px;
+        padding: 10px 0px;
         border-top: 0px;
         display: block;
     }
-    #header nav ul li.active a{
-        border-bottom: 3px solid #0065FC;
-        border-top: 0px;
-    }
-    #header nav ul li:hover a{
-        border-top: 0px;
-        border-bottom: 3px solid #0065FC;
-    }
-    #header nav ul li.act2 a{
+    #header nav ul li.active a, li.act2 a{
         border-bottom: 3px solid #f2f2f2;
+        border-top: 0px;
+    }
+    #header nav ul li:active a{
+        border-top: 0px;
+        border-bottom: 3px solid #0065FC;
+    }
+    #header nav ul li:hover a {
+        border-top: 0px;
     }
     #header nav ul li.last{
         position: absolute;
         top: -75px;
-        right: 0px;
+        right: 25px;
         text-align: right;
+    }
+    #header nav ul li .sinscrire {
+        padding-right: 0px;
     }
     #header nav ul li:hover .sinscrire{
         border-bottom: 0px;
+    }
+    .max-width{
+        padding: 0px;
     } 
 }
 
